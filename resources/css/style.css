@@ -69,8 +69,10 @@ h2:after{
 h3{
   font-size: 100%;
   margin-bottom: 10px;
-  text-align: center;
   font-weight: 400;
+}
+.section-features h3{
+  text-align: center;
 }
 /*----------------*/
 /*----PARAGRAPHS-----*/
@@ -90,6 +92,28 @@ text-align: justify;
 }
 
 /*----------------*/
+/*----ICONS-------*/
+/*----------------*/ 
+.icon-big{
+  color: #e67e22;
+  display: block;
+  font-size: 300%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.icon-small{
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  color: #e67e22;
+  font-size: 120%;
+  margin-right: 10px;
+  /*align the icon vertically*/
+  line-height: 120%;
+  vertical-align: middle;
+  margin-top: -1%;
+}
+/*----------------*/
 /*----HEADER-----*/
 /*----------------*/ 
 header{
@@ -105,6 +129,23 @@ header{
   left: 50%;
   transform: translate(-50%,-50%);
 }
+/*--------------------*/
+/*--------LINKS------*/
+/*------------------*/
+a:link,
+a:visited{
+  color: #e67e22;
+  text-decoration: none;
+  border-bottom: 1px solid #e67e22;
+  padding-bottom: 1%;
+  transition: border-bottom 0.2s, color 0.2s;
+}
+a:hover,
+a:active{
+  color: #cf6d17;
+  border-bottom: 1px solid transparent;
+}
+
 /*--------------------*/
 /*----NAVIGATION-----*/
 /*------------------*/ 
@@ -176,13 +217,7 @@ background-color: #cf6d17;
 /*-----------------------*/
 /*-----FEATURES---------*/
 /*---------------------*/ 
-.icon-big{
-  color: #e67e22;
-  display: block;
-  font-size: 300%;
-  text-align: center;
-  margin-bottom: 10px;
-}
+
 .section-features .long-text{
   margin-bottom: 30px;
 }
@@ -254,10 +289,22 @@ background-color: #cf6d17;
   padding-top: 10px;
   margin-right: 10px;
 }
-.button-app{
+.btn-app{
   display: inline-block;
   margin-right: 10px;
 }
-.button-app img{
+.btn-app:link,
+.btn-app:visited{
+  border: 0;
+}
+.btn-app img{
   height: 50px;
+}
+/*------------------------*/
+/*---------CITIES--------*/
+/*----------------------*/ 
+.cover{
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
 }
