@@ -182,7 +182,8 @@ a:active{
 /*----BUTTONS------*/
 /*----------------*/ 
 .btn:link,
-.btn:visited{
+.btn:visited,
+input[type=submit]{
   display: inline-block;
   padding: 10px 30px;
   border-radius: 10px;
@@ -191,7 +192,8 @@ a:active{
   transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 .btn-full:link,
-.btn-full:visited{
+.btn-full:visited,
+input[type=submit]{
   background-color: #e67e22;
   border: 1px solid #e67e22;
   margin-right: 15px;
@@ -202,11 +204,15 @@ a:active{
   color:#e67e22;
 }
 .btn:hover,
-.btn:active{
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active{
 background-color: #cf6d17;
 }
 .btn-full:hover,
-.btn-full:active{
+.btn-full:active,
+input[type=submit]:hover,
+input[type=submit]:active{
   border: 1px solid #cf6d17;
 }
 .btn-ghost:hover,
@@ -342,3 +348,72 @@ cite img{
   border-radius: 50%;
   margin-right: 10px;
 }
+/*------------------------*/
+/*------PLANS------------*/
+/*----------------------*/
+.section-plans{
+  background-color: rgb(245, 245, 245);
+}
+.price-box{
+background-color: #fff;
+width: 90%;
+margin: 0 5%;
+border-radius: 10px;
+box-shadow: 0 2px 2px #eaeaea;
+}
+.price-box div{
+  padding: 15px;
+  border-bottom: 1px solid rgb(230, 230, 230);
+}
+.price-box div:first-child{
+  background-color: #fcfcfc;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.price-box div:last-child{
+  text-align: center;
+  border-bottom: none;
+}
+.price-box ul{
+  list-style: none;
+}
+.price-box ul li {
+  padding: 5px 0;
+}
+.plan-price{
+  font-size: 300%;
+  color: #e67e22;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+.plan-price span{
+  font-size: 40%;
+  font-weight: 300;
+}
+.plan-price-meal{
+  font-size: 90%;
+}
+/*------------------------*/
+/*------CONTACT FORMS----*/
+/*----------------------*/
+.contact-form{
+  width: 60%;
+  margin: 0 20%;
+}
+input[type=text],
+input[type=email],
+textarea,
+select{
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+textarea{
+  height: 100px;
+}
+input[type=checkbox]{
+  margin-top: 10px;
+  margin-right: 10px;
+}
+*:focus {outline: none;}
