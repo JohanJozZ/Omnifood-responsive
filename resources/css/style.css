@@ -157,15 +157,12 @@ a:active{
 }
 .main-nav{
   float: right;
-  list-style: none;
   margin-top: 50px;
 }
-.main-nav li{
+.main-nav a:link,
+.main-nav a:visited {
   display: inline-block;
   margin-left: 40px;
-}
-.main-nav li a:link,
-.main-nav li a:visited {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
@@ -174,8 +171,8 @@ a:active{
   border-bottom: 2px solid transparent;
   transition: border-bottom 0.2s;
 }
-.main-nav li a:hover,
-.main-nav li a:active {
+.main-nav a:hover,
+.main-nav a:active {
   border-bottom: 2px solid #e67e22;
 }
 /*------------------*/
@@ -341,7 +338,6 @@ cite{
   margin-top: 30px;
   display: block;
   font-size: 90%;
-  vertical-align: middle;
 }
 cite img{
   height: 50px;
@@ -412,8 +408,62 @@ select{
 textarea{
   height: 100px;
 }
+select{
+  color: #555;
+}
 input[type=checkbox]{
   margin-top: 10px;
   margin-right: 10px;
 }
 *:focus {outline: none;}
+/*------------------------*/
+/*------FOOTER-----------*/
+/*----------------------*/
+footer{
+  background-color: #333;
+  padding: 30px;
+}
+footer p{
+  color: #fff;
+  font-size: 90%;
+  text-align: center;
+  margin-top: 30px;
+}
+.footer-nav{
+  height: 100%;
+}
+
+.footer-nav a,
+.social-nav a{
+margin-right: 10px;
+}
+.footer-nav a:last-child,
+.social-nav a:last-child{
+margin-right: 0;
+}
+.footer-nav a:link,
+.footer-nav a:visited,
+.social-nav a:link,
+.social-nav a:visited{
+color: #aaa;
+border: 0;
+transition: color 0.3s;
+}
+.footer-nav a:hover,
+.footer-nav a:active{
+color: #fff;
+}
+.social-nav{
+  text-align: right;
+  font-size: 150%;
+}
+.ion-logo-twitter,
+.ion-logo-facebook,
+.ion-logo-google,
+.ion-logo-instagram{
+  transition: color 0.2s;
+}
+.ion-logo-twitter:hover{color: #00aced;}
+.ion-logo-facebook:hover{color: #3b5998;}
+.ion-logo-google:hover{color: #dd4b39;}
+.ion-logo-instagram:hover{color: #C13584;}

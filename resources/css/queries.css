@@ -1,0 +1,30 @@
+
+/*1080 to 1200px width smaller than row class*/
+@media only screen and (max-width: 1200px){
+  .main-text-box{
+    width:100%;
+    padding: 0 2%;
+  }
+  .row{padding: 0 2%;}
+}
+/*769 to 1080px*/
+@media only screen and (max-width: 1080px){
+  html{font-size: 18px;}
+  section{padding: 40px 0;}
+}
+/*481 to 767px*/
+@media only screen and (max-width: 767px){
+  .long-text{
+    width: 80%;
+    margin: 0 10%;
+  }
+
+
+  .footer-nav{
+    font-size: 80%;
+  }
+}
+/*0 to 480px*/
+@media only screen and (max-width: 480px){
+
+}

@@ -2,26 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,300i,400&display=swap" rel="stylesheet">
     <title>Omnifood VSC</title>
   </head>
   <body>
     <header>
-      <nav>
         <div class="row">
           <img src="resources/img/logo-white.png" alt="Company logo"class="logo">
-          <ul class="main-nav">
-            <li><a href="#">Food delivery</a></li>
-            <li><a href="#">How it works</a></li>
-            <li><a href="#">Our cities</a></li>
-            <li><a href="#">Sign up</a></li>
-          </ul>
+          <nav class="main-nav clearfix">
+            <a href="#">Food delivery</a>
+            <a href="#">How it works</a>
+            <a href="#">Our cities</a>
+            <a href="#">Sign up</a>
+          </nav>
         </div>
-      </nav>
       <div class="main-text-box">
         <h1>Goodbye junk food. <br>Hello super healthy meals.</h1>
         <a class="btn btn-full" href="#">I'm hungry</a>
@@ -311,6 +312,30 @@
         </form>
       </div>
     </section>
+    <footer>
+      <div class="row">
+        <div class="col span-1-of-2">
+          <nav class="footer-nav">
+            <a href="#">About us</a>
+            <a href="#">Blog</a>
+            <a href="#">Press</a>
+            <a href="#">iOS App</a>
+            <a href="#">Android App</a>
+          </nav>
+        </div>
+        <div class="col span-1-of-2">
+          <nav class="social-nav">
+              <a href="#"><i class="ion ion-logo-twitter"></i></a>
+              <a href="#"><i class="ion ion-logo-facebook"></i></a>
+              <a href="#"><i class="ion ion-logo-instagram"></i></a>
+              <a href="#"><i class="ion ion-logo-google"></i></a>
+          </nav>
+        </div>
+      </div>
+      <div class="row">
+        <p>Copyright &copy; 2020 Omnifood</p>
+      </div>
+    </footer>
   </body>
 </html>
 
