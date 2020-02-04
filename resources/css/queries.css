@@ -6,25 +6,138 @@
     padding: 0 2%;
   }
   .row{padding: 0 2%;}
-}
-/*769 to 1080px*/
+  }
+/*768 to 1080px*/
 @media only screen and (max-width: 1080px){
   html{font-size: 18px;}
   section{padding: 40px 0;}
-}
-/*481 to 767px*/
-@media only screen and (max-width: 767px){
   .long-text{
     width: 80%;
     margin: 0 10%;
   }
-
-
-  .footer-nav{
-    font-size: 80%;
+  .icon-small{
+    margin-right: 5px;
+    width: 15px;
+  }
+  .city-feature{
+    font-size: 90%;
+  }
+  .box{padding:0.5%;}
+  .step-box{ margin-top: 20px;}
+  .step-box:last-child{ margin-top: 20px;}
+  .step-list:last-of-type{margin-bottom: 30px;}
+  .btn-app img{height: 40px;}
+  .plan-price{font-size: 250%;}
+  .price-box ul{height: 130px;}
+  .price-box li{font-size: 90%;}
+  .plan-price-meal{font-size: 80%;}
+  .contact-form{
+    width: 80%;
+    margin: 0 10%;
   }
 }
-/*0 to 480px*/
-@media only screen and (max-width: 480px){
+/*481 to 767px*/
+@media only screen and (max-width: 767px){
+  section{
+    padding: 30px 0;
+  }
+  .row,
+  .main-text-box{ padding: 0 4%;}
+  .col {
+    width: 100%;
+    margin:0 0 3% 0;
+  }
+  .main-nav{display: none;}
+  h1{font-size: 180%;}
+  h2{font-size: 150% ;}
+  h2:after{margin-top: 20px;}
 
+  .long-text{
+    width: 100%;
+    margin: 0;
+    text-align: justify;
+  }
+
+  .step-box:first-child{
+    padding-right: 0;
+    text-align: center;
+  }
+  .step-box:last-child{padding-left: 0;}
+  .step-list div{
+    height: 40px;
+    width: 40px;
+    padding-top: 7px;
+    margin-right: 5px;
+  }
+  .step-list{ margin-bottom: 20px;}
+  .app-container{
+    text-align: center;
+  }
+
+  .section-cities .box{
+  width: 50%;
+  padding: 1%;
+  }
+  .cover{margin-bottom: 20px;}
+
+  cite{ 
+    text-align: center;
+    margin-top: 15px
+  }
+  blockquote{margin-top: 20px;}
+  blockquote:before{top: -20px;}
+  footer .col{
+    margin: 0;
+  }
+  .footer-nav,
+  .social-nav{
+    height: 35px;
+  }
+  .footer-nav{
+    text-align: center;
+    font-size: 90%;
+  }
+  .social-nav{
+    text-align: center;
+  }
+
+  .responsive-checkbox{ 
+    display: flex;
+    align-items: center;
+  }
+  .responsive-checkbox span{ display: none;}
+  .responsive-checkbox div:first-child{ flex: 5;}
+  .responsive-checkbox div:last-child{ 
+    flex: 1;
+    text-align: center;
+  }
+  input[type=checkbox]{
+    margin: 0;
+  }
+  .contact-form .row:last-child label{display: none;}
+  /*0 to 480px*/
+@media only screen and (max-width: 480px){
+  html{font-size: 16px;}
+  .contact-form{
+    width: 100%;
+    margin:0;
+  }
+  .section-cities .box{
+    width: 100%;
+    margin-bottom: 20px;
+    }
+  .cover{margin-bottom: 10px;}
+  .btn:link,
+  .btn:visited,
+  input[type=submit]{
+    padding: 10px 20px;
+}
+  footer{ padding: 10px 0;}
+  .footer-nav{font-size: 80%;}
+  .footer-nav a{
+    margin-right: 5px;
+  }
+  .footer-nav a:last-child{
+    margin-right: 0;
+  }
 }

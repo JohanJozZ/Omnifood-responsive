@@ -29,7 +29,6 @@ html {
   visibility: hidden;
 }
 section{
-  height: 100vh;
   padding: 50px 0;
 }
 .box{
@@ -229,6 +228,7 @@ input[type=submit]:active{
 /*----------------------*/ 
 .section-meals{
   padding:0;
+  height: auto;
 }
 .meals-showcase{
   list-style: none;
@@ -265,10 +265,12 @@ input[type=submit]:active{
 .big-image{
   width: 40%;
 }
+.step-box{
+  margin-top: 30px;
+}
 .step-box:first-child{
   padding-right: 3%;
   text-align: center;
-  margin-top: 30px;
 }
 .step-box:last-child{
   padding-left: 3%;
@@ -421,21 +423,18 @@ input[type=checkbox]{
 /*----------------------*/
 footer{
   background-color: #333;
-  padding: 30px;
+  padding: 20px;
 }
+
 footer p{
   color: #fff;
   font-size: 90%;
   text-align: center;
   margin-top: 30px;
 }
-.footer-nav{
-  height: 100%;
-}
-
-.footer-nav a,
-.social-nav a{
-margin-right: 10px;
+.footer-nav,
+.social-nav{
+  height: 50px;
 }
 .footer-nav a:last-child,
 .social-nav a:last-child{
@@ -445,9 +444,11 @@ margin-right: 0;
 .footer-nav a:visited,
 .social-nav a:link,
 .social-nav a:visited{
+margin-right: 10px;
 color: #aaa;
 border: 0;
 transition: color 0.3s;
+line-height: 50px;
 }
 .footer-nav a:hover,
 .footer-nav a:active{
